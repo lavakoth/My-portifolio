@@ -1,0 +1,226 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    width: 80%;
+    height: auto;
+    background-color:#d5d9dd;
+    padding-left: 10%;
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    /* border: 1px solid black; */
+
+}
+#header{
+    width: 100%;
+    height: 40vh;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+#header div{
+    /* border: 1px solid black; */
+}
+#header :first-child{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+#header :nth-child(2){
+    grid-column: span 3;
+
+}
+h1{
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-top: 7px;
+}
+#header .introduction h2{
+    color: chocolate;
+    font-family: roboto;
+    font-weight: 300;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+#header .introduction p{
+    margin-top: 10px;
+}
+#header .personal span{
+    color: grey;
+    font-size: 10px;
+    font-weight: 500;
+}
+.socialmedialinks i{
+    /* border: 1px solid black; */
+    padding: 4px;
+    border-radius: 2px;
+}
+img{
+    width: 100%;
+    border-radius: 5px;
+    height: 180px;
+    
+}
+.image{
+    /* border: 1px solid red; */
+    width: 75%;
+    height: 40vh;
+}
+.first,.history{
+    /* border: 1px solid rgb(197, 40, 40); */
+    margin-top: 35px;
+    height: 8vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    
+
+}
+
+.second{
+margin-top: 60px;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 1rem;
+}
+.second div,.three div,.fourth div{
+    /* border: 1px solid black; */
+}
+.second div:first-child{
+    grid-row-start: 1;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+   /* width: 60%; */
+}
+.first h2,.history h2,.second h2,.three h2,.fourth h2,.sixth h2,.seventh h2,.eight h2{
+    font-size: 15px;
+    text-transform: uppercase;
+    color: grey;
+    
+}
+.first h3,.history h3,#header h3,.second h3,.fourth h3,.fifth h3,.sixth h3,.seventh h3,.eight h3{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.first p,.history p,#header .personal p,.second p,.fourth p,.three p,.sixth p,.seventh p,.eight p{
+    font-size: 14px;
+    color: grey;
+    font-weight: 400;
+}
+
+.three{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    margin-top: 45px;
+    gap: 1rem;
+}
+.picture{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.picture div:first-child{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+}
+.fourth{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin-top: 50px;
+}
+.fifth{
+    width: 80%;
+    height: 75vh;
+    /* border: 1px solid red; */
+    margin-top: 50px;
+    margin-left: 187px;
+}
+.fifth input{
+    margin-top: 20px;
+    width:100%;
+    height: 6vh;
+}
+.fifth textarea{
+    margin-top: 20px;
+    width: 100%;
+    height: 30vh;
+}
+.fifth button{
+    margin-top: 20px;
+    width: 15%;
+    color: #fff;
+    background-color: rgb(241, 91, 36);
+    height: 6vh;
+    border: none;
+    border-radius: 2px;
+}
+.sixth{
+    width: 100%;
+    height: 55vh;
+    /* border: 1px solid yellow; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    margin-top: 55px;
+}
+.sixth-section{
+    /* border: 1px solid black; */
+}
+
+.sixth .sixth-section-part-1{
+    height:10vh;
+    /* border:1px solid red; */
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.sixth div span{
+    /* border: 1px solid black; */
+    background-color: black;
+    color: rgb(143, 135, 135);
+    border-radius: 4px;
+}
+ hr{
+    border: 1px solid rgb(190, 31, 31);
+}
+
+.seventh{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 40px;
+    gap: 1.5rem;
+
+}
+.seventh div{
+    /* border: 1px solid black; */
+}
+.seventh :first-child{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.seventh .special-p,.eight .special-p{
+    font-weight: 600;
+    color: black;
+}
+.eight{
+    /* border: 1px solid red; */
+    width: 66%;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    margin-top: 50px;
+}
+.eight :first-child{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: span 3;
+}
